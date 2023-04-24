@@ -365,7 +365,25 @@ region CHAR(2),
      CONSTRAINT acctmanager2_region_ck
                 CHECK (region IN ('N', 'NW', 'NE', 'S', 'SE', 'SW', 'W', 'E')));
 
- 
+select * from Books;
+
+select title from Books;
+
+select title, pubdate as "Publication Date" from BOOKS;
+
+select customer#, city, state from Customers;
+
+select name, contact as "Contact Person", phone from Publisher;
+
+select Distinct category from Books;
+
+select Unique customer# from Orders;
+
+select category, title from Books;
+
+select LNAME|| ', ' || FNAME Name from Author;
+
+select order#, item#, isbn, quantity, paideach, quantity*paideach AS "Item Total" from OrderItems;
  
 
  
